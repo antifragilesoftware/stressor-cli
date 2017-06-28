@@ -1,0 +1,22 @@
+{
+  "name": "stressor-cli",
+  "version": "1.0.0",
+  "description": "A CLI for running stressors",
+  "main": "stressor-cli.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antifragilesoftware/stressor-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antifragilesoftware/stressor-cli/issues"
+  },
+  "homepage": "https://github.com/antifragilesoftware/stressor-cli#readme",
+  "dependencies": {
+    "wireless": "^0.3.2"
+  }
+}
