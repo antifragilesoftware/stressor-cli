@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/antifragilesoftware/stressor-cli#readme",
   "dependencies": {
-    "wireless": "^0.3.2"
+    "manage-wifi": "^1.0.1",
+    "node-wifi": "^1.2.4"
   }
 }
