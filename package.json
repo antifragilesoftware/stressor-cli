@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "bin": {
+    "stressor": "./stressor-cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antifragilesoftware/stressor-cli.git"

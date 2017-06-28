@@ -8,6 +8,10 @@ function sleep(time, callback) {
     callback();
 }
 
+var importedObject = JSON.parse(process.env.details);
+
+console.log("Passed object: " + importedObject.custom);
+
 manageWifi
     .off()
     .then(() => {
