@@ -7,9 +7,8 @@ var exec = require('child_process').exec;
 function puts(error, stdout, stderr) { console.log(stdout) }
 console.log("Using command: " + process.argv[2])
 
-process.env.stressor = JSON.stringify({
-   delay : 5,
-});
+process.env.stressor = process.argv[3];
+
 var options = {
     env : process.env
 };

@@ -9,6 +9,7 @@ function sleep(time, callback) {
 }
 
 const parameters = JSON.parse(process.env.stressor);
+console.log("Parameters received: " + parameters.delay);
 const delay = parameters.delay;
 
 console.log("Delay setting is: " + delay);
