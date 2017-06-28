@@ -8,16 +8,16 @@ function sleep(time, callback) {
     callback();
 }
 
-var importedObject = JSON.parse(process.env.details);
+const parameters = JSON.parse(process.env.stressor);
+const delay = parameters.delay;
 
-console.log("Passed object: " + importedObject.custom);
+console.log("Delay setting is: " + delay);
 
 manageWifi
     .off()
     .then(() => {
         console.log('Wi-Fi is off');
-        sleep(5000, function() {
-            // executes after one second, and blocks the thread
+        sleep(delay * 1000, function() {
         });
     })
     .then(manageWifi.on)
