@@ -1,4 +1,5 @@
 const manageWifi = require('manage-wifi');
+const uuidv4 = require('uuid/v4');
 
 function sleep(time, callback) {
     var stop = new Date().getTime();
@@ -9,19 +10,23 @@ function sleep(time, callback) {
 }
 
 const parameters = JSON.parse(process.env.stressor);
-console.log("Parameters received: " + parameters.delay);
 const delay = parameters.delay;
-
-console.log("Delay setting is: " + delay);
 
 manageWifi
     .off()
     .then(() => {
-        console.log('Wi-Fi is off');
         sleep(delay * 1000, function() {
         });
     })
-    .then(manageWifi.on)
-    .then(() => {
-        console.log('Wi-Fi is on');
-    });
+    .then(manageWifi.on);
+
+const event = {
+    id : uuidv4(),
+    name : "network-wifi-stressor",
+    timestamp : new Date(),
+    payload : {
+        delay : delay,
+    },
+}
+
+console.log(JSON.stringify(event))

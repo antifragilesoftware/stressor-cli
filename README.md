@@ -21,11 +21,11 @@ You can then dev your `stressor` tool to your heart's content.
 ## Samples with installing and linking locally
 
 ```shell
-> stressor "./network-wifi-stressor.sh" "{\"delay\" : 5}"
+> stress "./network-wifi-stressor.sh" "{\"delay\" : 5}"
 ```
 
 ```shell
-> stressor "node network-wifi-stressor.js" "{\"delay\" : 5}"
+> stress "node network-wifi-stressor.js" "{\"delay\" : 5}"
 ```
 
 ## Samples without installing and linking
