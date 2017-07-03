@@ -16,7 +16,7 @@ Then:
 > sudo npm link
 ```
 
-You can then dev your `stressor` tool to your heart's content.
+You can then dev your `stress` tool to your heart's content.
 
 ## Samples with installing and linking locally
 
