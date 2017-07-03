@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/antifragilesoftware/stressor-cli#readme",
   "dependencies": {
+    "commander": "^2.11.0",
     "manage-wifi": "^1.0.1",
+    "mocha": "^3.4.2",
     "node-wifi": "^1.2.4",
     "uuid": "^3.1.0"
   }
