@@ -25,5 +25,9 @@
     "mocha": "^3.4.2",
     "node-wifi": "^1.2.4",
     "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.9",
+    "typescript": "^2.4.1"
   }
 }
