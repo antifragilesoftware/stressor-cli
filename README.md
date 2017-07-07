@@ -28,6 +28,11 @@ You can then dev your `stress` tool to your heart's content.
 > stress "node network-wifi-stressor.js" "{\"delay\" : 5}"
 ```
 
+## Sample that disables network interface if it has an ip address (needs to run as sudo)
+```shell
+> sudo stress "node network-stressor.js" "{\"delay\" : 5}"
+```
+
 ## Samples without installing and linking
 
 ```shell
@@ -36,4 +41,9 @@ You can then dev your `stress` tool to your heart's content.
 
 ```shell
 > node stressor-cli.js "node network-wifi-stressor.js" "{\"delay\" : 5}"
+```
+
+## Sample that disables network interface if it has an ip address (needs to run as sudo)
+```shell
+> sudo node stressor-cli.js "node network-stressor.js" "{\"delay\" : 5}"
 ```
